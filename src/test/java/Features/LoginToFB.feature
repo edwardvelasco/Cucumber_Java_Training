@@ -5,5 +5,5 @@ Feature: Login to FaceBook - Story Card
     When user enters username and password
     And user clicks login button
     Then user validate welcome message
-    * user logout to FB 1
+    * user logout to FB
     * close browser

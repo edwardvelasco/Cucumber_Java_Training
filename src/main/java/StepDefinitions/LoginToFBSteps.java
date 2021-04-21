@@ -13,13 +13,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class LoginToFBSteps {
     WebDriver driver;
 
     @Given("^user is on Facebook login page$")
-    public void user_is_on_Facebook_login_page() throws Throwable {
+    public void user_is_on_Facebook_login_page(){
         System.setProperty("webdriver.chrome.driver","d:\\chromedriver.exe");
         ChromeOptions ops = new ChromeOptions();
         ops.addArguments("--disable-notifications");
@@ -40,10 +41,10 @@ public class LoginToFBSteps {
     public void user_enters_username_and_password() throws Throwable {
         Thread.sleep(5000);
         driver.findElement(By.name("email")).sendKeys("edward.velasco.ph+Matt@gmail.com");
-        driver.findElement(By.name("pass")).sendKeys("Matt_1234");
+        driver.findElement(By.name("pass")).sendKeys("TestingTeam1234");
         Thread.sleep(5000);
         File shot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(shot, new File("D:\\Screenshots\\LoginPage.jpg"));
+        FileUtils.copyFile(shot, new File("D:\\Screenshots\\LoginPage.PNG"));
     }
 
     @When("^user clicks login button$")
@@ -63,18 +64,30 @@ public class LoginToFBSteps {
     }
 
     @Then("^user validate welcome message$")
-    public void user_validate_welcome_message() throws Throwable {
-        Thread.sleep(5000);
+    public void user_validate_welcome_message(){
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         driver.getPageSource().contains("What's on your mind, Matt Edward?");
         File shot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(shot, new File("D:\\Screenshots\\FacebookWall.jpg"));
+        try {
+            FileUtils.copyFile(shot, new File("D:\\Screenshots\\FacebookWall.PNG"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         //What's on your mind, Matt Edward?
         //Welcome to Facebook
     }
 
     @Then("^user logout to FB$")
-    public void user_logout_to_FB() throws Throwable{
-        Thread.sleep(5000);
+    public void user_logout_to_FB(){
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         WebElement logoutDropdown = driver.findElement(By.cssSelector(CommonButtons.LOGOUTBTN));
         logoutDropdown.click();
         driver.findElement(By.xpath("//span[text()='Log Out']")).click();
@@ -87,7 +100,11 @@ public class LoginToFBSteps {
 
         }
         File shot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(shot, new File("D:\\Screenshots\\LogOutPage.jpg"));
+        try {
+            FileUtils.copyFile(shot, new File("D:\\Screenshots\\LogOutPage.PNG"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
     @Then("^close browser$")
     public void closeBrowser(){
