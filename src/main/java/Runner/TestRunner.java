@@ -10,7 +10,8 @@ import org.junit.runner.RunWith;
         glue = {"StepDefinitions"},
         plugin = {"pretty", "html:target/cucumber-reports/","junit:target/cucumber-reportsJunit/CucumberJunit.xml"}
         //strict = true,
-        //dryRun = true
+        //dryRun = true,
+        //monochrome = true
 
 
 )

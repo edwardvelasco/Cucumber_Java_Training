@@ -2,6 +2,9 @@ package StepDefinitions;
 
 import Mapping.CommonButtons;
 //import cucumber.api.java.After;
+import cucumber.api.DataTable;
+import cucumber.api.PendingException;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -14,6 +17,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class LoginToFBSteps {
@@ -36,12 +40,19 @@ public class LoginToFBSteps {
         final String PAGETITLE = "Facebook – log in or sign up";
         Assert.assertEquals(PAGETITLE,pageTitle);
     }
-
-    @When("^user enters username and password$")
-    public void user_enters_username_and_password() throws Throwable {
+    // Regular Expression:
+// "([^"]*)"
+    // \"(.*)\"
+    @When("^user enters \"(.*)\" and \"(.*)\"$")
+    public void user_enters_username_and_password(String username, String password) throws Throwable {
         Thread.sleep(5000);
+        /*
         driver.findElement(By.name("email")).sendKeys("edward.velasco.ph+Matt@gmail.com");
         driver.findElement(By.name("pass")).sendKeys("TestingTeam1234");
+        */
+
+        driver.findElement(By.name("email")).sendKeys(username);
+        driver.findElement(By.name("pass")).sendKeys(password);
         Thread.sleep(5000);
         File shot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(shot, new File("D:\\Screenshots\\LoginPage.PNG"));
@@ -66,7 +77,7 @@ public class LoginToFBSteps {
     @Then("^user validate welcome message$")
     public void user_validate_welcome_message(){
         try {
-            Thread.sleep(5000);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -84,7 +95,7 @@ public class LoginToFBSteps {
     @Then("^user logout to FB$")
     public void user_logout_to_FB(){
         try {
-            Thread.sleep(5000);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -110,6 +121,22 @@ public class LoginToFBSteps {
     public void closeBrowser(){
         driver.quit();
     }
+
+    @When("^user enters userName and passWord$")
+    public void userEntersUserNameAndPassWord(DataTable userCreds) {
+        List<List<String>> data = userCreds.raw();
+        //System.out.println(data.get(0).get(0));
+        String GridUsername = (data.get(0).get(0));
+        String GridPassword = (data.get(0).get(1));
+        String ActualUsername = (data.get(2).get(0));
+        String ActualPassword = (data.get(2).get(1));
+        System.out.println(GridUsername + ": " + ActualUsername);
+        System.out.println(GridPassword + ": " + ActualPassword);
+        driver.findElement(By.name("email")).sendKeys(data.get(2).get(0));
+        driver.findElement(By.name("pass")).sendKeys(data.get(2).get(1));
+
+    }
+
         /*
     @After
     public void closeBrowser(){
