@@ -125,7 +125,7 @@ public class LoginToFBSteps {
     @When("^user enters userName and passWord$")
     public void userEntersUserNameAndPassWord(DataTable userCreds) {
         List<List<String>> data = userCreds.raw();
-        //System.out.println(data.get(0).get(0));
+        System.out.println(data.get(0).get(0));
         String GridUsername = (data.get(0).get(0));
         String GridPassword = (data.get(0).get(1));
         String ActualUsername = (data.get(2).get(0));

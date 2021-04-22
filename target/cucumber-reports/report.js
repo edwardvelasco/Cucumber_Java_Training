@@ -139,7 +139,7 @@ formatter.match({
   "location": "LoginToFBSteps.user_is_on_Facebook_login_page()"
 });
 formatter.result({
-  "duration": 5981108891,
+  "duration": 5671513997,
   "status": "passed"
 });
 formatter.match({
@@ -156,35 +156,35 @@ formatter.match({
   "location": "LoginToFBSteps.user_enters_username_and_password(String,String)"
 });
 formatter.result({
-  "duration": 10597429439,
+  "duration": 10571202415,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginToFBSteps.user_clicks_login_button()"
 });
 formatter.result({
-  "duration": 5469458875,
+  "duration": 5459773909,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginToFBSteps.user_validate_welcome_message()"
 });
 formatter.result({
-  "duration": 1571397384,
+  "duration": 1574031513,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginToFBSteps.user_logout_to_FB()"
 });
 formatter.result({
-  "duration": 3281799515,
+  "duration": 3311458160,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginToFBSteps.closeBrowser()"
 });
 formatter.result({
-  "duration": 698421365,
+  "duration": 752540025,
   "status": "passed"
 });
 formatter.scenario({
@@ -233,7 +233,7 @@ formatter.match({
   "location": "LoginToFBSteps.user_is_on_Facebook_login_page()"
 });
 formatter.result({
-  "duration": 4826763845,
+  "duration": 3111403109,
   "status": "passed"
 });
 formatter.match({
@@ -250,35 +250,35 @@ formatter.match({
   "location": "LoginToFBSteps.user_enters_username_and_password(String,String)"
 });
 formatter.result({
-  "duration": 10665567440,
+  "duration": 10518269134,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginToFBSteps.user_clicks_login_button()"
 });
 formatter.result({
-  "duration": 5265982036,
+  "duration": 5419976874,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginToFBSteps.user_validate_welcome_message()"
 });
 formatter.result({
-  "duration": 1561340093,
+  "duration": 1522542479,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginToFBSteps.user_logout_to_FB()"
 });
 formatter.result({
-  "duration": 3314254081,
+  "duration": 3372016533,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginToFBSteps.closeBrowser()"
 });
 formatter.result({
-  "duration": 716653021,
+  "duration": 675011971,
   "status": "passed"
 });
 formatter.scenario({
@@ -327,7 +327,7 @@ formatter.match({
   "location": "LoginToFBSteps.user_is_on_Facebook_login_page()"
 });
 formatter.result({
-  "duration": 3026773840,
+  "duration": 2970766929,
   "status": "passed"
 });
 formatter.match({
@@ -344,35 +344,35 @@ formatter.match({
   "location": "LoginToFBSteps.user_enters_username_and_password(String,String)"
 });
 formatter.result({
-  "duration": 10538879329,
+  "duration": 10501996180,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginToFBSteps.user_clicks_login_button()"
 });
 formatter.result({
-  "duration": 5303225632,
+  "duration": 5856952101,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginToFBSteps.user_validate_welcome_message()"
 });
 formatter.result({
-  "duration": 1570874326,
+  "duration": 1693347663,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginToFBSteps.user_logout_to_FB()"
 });
 formatter.result({
-  "duration": 3322503403,
+  "duration": 3582977972,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginToFBSteps.closeBrowser()"
 });
 formatter.result({
-  "duration": 679961563,
+  "duration": 795367273,
   "status": "passed"
 });
 formatter.scenario({
@@ -421,7 +421,7 @@ formatter.match({
   "location": "LoginToFBSteps.user_is_on_Facebook_login_page()"
 });
 formatter.result({
-  "duration": 3156033821,
+  "duration": 4828541094,
   "status": "passed"
 });
 formatter.match({
@@ -438,35 +438,35 @@ formatter.match({
   "location": "LoginToFBSteps.user_enters_username_and_password(String,String)"
 });
 formatter.result({
-  "duration": 10548977170,
+  "duration": 10519793251,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginToFBSteps.user_clicks_login_button()"
 });
 formatter.result({
-  "duration": 5353713198,
+  "duration": 5234597752,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginToFBSteps.user_validate_welcome_message()"
 });
 formatter.result({
-  "duration": 1564832742,
+  "duration": 1547507529,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginToFBSteps.user_logout_to_FB()"
 });
 formatter.result({
-  "duration": 3666989158,
+  "duration": 3190672369,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginToFBSteps.closeBrowser()"
 });
 formatter.result({
-  "duration": 762510480,
+  "duration": 724493971,
   "status": "passed"
 });
 });

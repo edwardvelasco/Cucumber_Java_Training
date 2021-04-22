@@ -16,3 +16,15 @@ Feature: Login to FaceBook - Story Card
       | edward.velasco.ph+Matt4@gmail.com | TestingTeam1234 |
 
 
+   # String Param
+          # String Param
+
+   # When user enters "edward.velasco.ph+Matt@gmail.com" and "TestingTeam1234"
+
+
+   # Data Table
+
+   # When user enters userName and passWord
+   #   | username                          | password         |
+   #   | edward.velasco.ph+Matt@gmail.com  | TestingTeam1234  |
+   #   | NoOne@gmail.com | NoPass |
