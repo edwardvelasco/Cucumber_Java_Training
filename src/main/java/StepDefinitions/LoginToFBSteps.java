@@ -124,16 +124,16 @@ public class LoginToFBSteps {
 
     @When("^user enters userName and passWord$")
     public void userEntersUserNameAndPassWord(DataTable userCreds) {
-        List<List<String>> data = userCreds.raw();
-        System.out.println(data.get(0).get(0));
-        String GridUsername = (data.get(0).get(0));
-        String GridPassword = (data.get(0).get(1));
-        String ActualUsername = (data.get(2).get(0));
-        String ActualPassword = (data.get(2).get(1));
+        List<List<String>> userPass = userCreds.raw();
+        System.out.println(userPass.get(0).get(0));
+        String GridUsername = (userPass.get(0).get(0));
+        String GridPassword = (userPass.get(0).get(1));
+        String ActualUsername = (userPass.get(2).get(0));
+        String ActualPassword = (userPass.get(2).get(1));
         System.out.println(GridUsername + ": " + ActualUsername);
         System.out.println(GridPassword + ": " + ActualPassword);
-        driver.findElement(By.name("email")).sendKeys(data.get(2).get(0));
-        driver.findElement(By.name("pass")).sendKeys(data.get(2).get(1));
+        driver.findElement(By.name("email")).sendKeys(userPass.get(2).get(0));
+        driver.findElement(By.name("pass")).sendKeys(userPass.get(2).get(1));
 
     }
 

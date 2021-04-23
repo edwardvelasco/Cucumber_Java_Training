@@ -139,7 +139,7 @@ formatter.match({
   "location": "LoginToFBSteps.user_is_on_Facebook_login_page()"
 });
 formatter.result({
-  "duration": 5671513997,
+  "duration": 4649586530,
   "status": "passed"
 });
 formatter.match({
@@ -156,35 +156,35 @@ formatter.match({
   "location": "LoginToFBSteps.user_enters_username_and_password(String,String)"
 });
 formatter.result({
-  "duration": 10571202415,
+  "duration": 10588515749,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginToFBSteps.user_clicks_login_button()"
 });
 formatter.result({
-  "duration": 5459773909,
+  "duration": 5591835957,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginToFBSteps.user_validate_welcome_message()"
 });
 formatter.result({
-  "duration": 1574031513,
+  "duration": 1658509232,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginToFBSteps.user_logout_to_FB()"
 });
 formatter.result({
-  "duration": 3311458160,
+  "duration": 3167487435,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginToFBSteps.closeBrowser()"
 });
 formatter.result({
-  "duration": 752540025,
+  "duration": 697448978,
   "status": "passed"
 });
 formatter.scenario({
@@ -233,7 +233,7 @@ formatter.match({
   "location": "LoginToFBSteps.user_is_on_Facebook_login_page()"
 });
 formatter.result({
-  "duration": 3111403109,
+  "duration": 3051283417,
   "status": "passed"
 });
 formatter.match({
@@ -250,35 +250,35 @@ formatter.match({
   "location": "LoginToFBSteps.user_enters_username_and_password(String,String)"
 });
 formatter.result({
-  "duration": 10518269134,
+  "duration": 10547753289,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginToFBSteps.user_clicks_login_button()"
 });
 formatter.result({
-  "duration": 5419976874,
+  "duration": 5552413705,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginToFBSteps.user_validate_welcome_message()"
 });
 formatter.result({
-  "duration": 1522542479,
+  "duration": 1654284629,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginToFBSteps.user_logout_to_FB()"
 });
 formatter.result({
-  "duration": 3372016533,
+  "duration": 3510173412,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginToFBSteps.closeBrowser()"
 });
 formatter.result({
-  "duration": 675011971,
+  "duration": 709019326,
   "status": "passed"
 });
 formatter.scenario({
@@ -327,7 +327,7 @@ formatter.match({
   "location": "LoginToFBSteps.user_is_on_Facebook_login_page()"
 });
 formatter.result({
-  "duration": 2970766929,
+  "duration": 4931608458,
   "status": "passed"
 });
 formatter.match({
@@ -344,35 +344,35 @@ formatter.match({
   "location": "LoginToFBSteps.user_enters_username_and_password(String,String)"
 });
 formatter.result({
-  "duration": 10501996180,
+  "duration": 10495204621,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginToFBSteps.user_clicks_login_button()"
 });
 formatter.result({
-  "duration": 5856952101,
+  "duration": 5269296919,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginToFBSteps.user_validate_welcome_message()"
 });
 formatter.result({
-  "duration": 1693347663,
+  "duration": 1660100524,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginToFBSteps.user_logout_to_FB()"
 });
 formatter.result({
-  "duration": 3582977972,
+  "duration": 3293167112,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginToFBSteps.closeBrowser()"
 });
 formatter.result({
-  "duration": 795367273,
+  "duration": 715968171,
   "status": "passed"
 });
 formatter.scenario({
@@ -421,7 +421,7 @@ formatter.match({
   "location": "LoginToFBSteps.user_is_on_Facebook_login_page()"
 });
 formatter.result({
-  "duration": 4828541094,
+  "duration": 4753707791,
   "status": "passed"
 });
 formatter.match({
@@ -438,35 +438,242 @@ formatter.match({
   "location": "LoginToFBSteps.user_enters_username_and_password(String,String)"
 });
 formatter.result({
-  "duration": 10519793251,
+  "duration": 10523343244,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginToFBSteps.user_clicks_login_button()"
 });
 formatter.result({
-  "duration": 5234597752,
+  "duration": 5261212257,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginToFBSteps.user_validate_welcome_message()"
 });
 formatter.result({
-  "duration": 1547507529,
+  "duration": 1638319285,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginToFBSteps.user_logout_to_FB()"
 });
 formatter.result({
-  "duration": 3190672369,
+  "duration": 3211272734,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginToFBSteps.closeBrowser()"
 });
 formatter.result({
-  "duration": 724493971,
+  "duration": 658942178,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 18,
+  "name": "Login to FB and Validate Welcome message - Data Table",
+  "description": "",
+  "id": "login-to-facebook---story-card;login-to-fb-and-validate-welcome-message---data-table",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 19,
+  "name": "user is on Facebook login page",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 20,
+  "name": "user enters userName and passWord",
+  "rows": [
+    {
+      "cells": [
+        "username",
+        "password"
+      ],
+      "line": 21
+    },
+    {
+      "cells": [
+        "edward.velasco.ph+Matt1@gmail.com",
+        "TestingTeam1234"
+      ],
+      "line": 22
+    },
+    {
+      "cells": [
+        "edward.velasco.ph+Matt2@gmail.com",
+        "TestingTeam1234"
+      ],
+      "line": 23
+    },
+    {
+      "cells": [
+        "edward.velasco.ph+Matt3@gmail.com",
+        "TestingTeam1234"
+      ],
+      "line": 24
+    },
+    {
+      "cells": [
+        "edward.velasco.ph+Matt4@gmail.com",
+        "TestingTeam1234"
+      ],
+      "line": 25
+    }
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 26,
+  "name": "user clicks login button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 27,
+  "name": "user validate welcome message",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 28,
+  "name": "user logout to FB",
+  "keyword": "* "
+});
+formatter.step({
+  "line": 29,
+  "name": "close browser",
+  "keyword": "* "
+});
+formatter.match({
+  "location": "LoginToFBSteps.user_is_on_Facebook_login_page()"
+});
+formatter.result({
+  "duration": 2951614496,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginToFBSteps.userEntersUserNameAndPassWord(DataTable)"
+});
+formatter.result({
+  "duration": 204350104,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginToFBSteps.user_clicks_login_button()"
+});
+formatter.result({
+  "duration": 5369067011,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginToFBSteps.user_validate_welcome_message()"
+});
+formatter.result({
+  "duration": 1654862983,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginToFBSteps.user_logout_to_FB()"
+});
+formatter.result({
+  "duration": 3286429621,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginToFBSteps.closeBrowser()"
+});
+formatter.result({
+  "duration": 724196193,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 31,
+  "name": "Login to FB and Validate Welcome message - String Parameter",
+  "description": "",
+  "id": "login-to-facebook---story-card;login-to-fb-and-validate-welcome-message---string-parameter",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 32,
+  "name": "user is on Facebook login page",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 33,
+  "name": "user enters \"edward.velasco.ph+Matt1@gmail.com\" and \"TestingTeam1234\"",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 34,
+  "name": "user clicks login button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 35,
+  "name": "user validate welcome message",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 36,
+  "name": "user logout to FB",
+  "keyword": "* "
+});
+formatter.step({
+  "line": 37,
+  "name": "close browser",
+  "keyword": "* "
+});
+formatter.match({
+  "location": "LoginToFBSteps.user_is_on_Facebook_login_page()"
+});
+formatter.result({
+  "duration": 3009960625,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "edward.velasco.ph+Matt1@gmail.com",
+      "offset": 13
+    },
+    {
+      "val": "TestingTeam1234",
+      "offset": 53
+    }
+  ],
+  "location": "LoginToFBSteps.user_enters_username_and_password(String,String)"
+});
+formatter.result({
+  "duration": 10489739343,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginToFBSteps.user_clicks_login_button()"
+});
+formatter.result({
+  "duration": 5410974710,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginToFBSteps.user_validate_welcome_message()"
+});
+formatter.result({
+  "duration": 1628435255,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginToFBSteps.user_logout_to_FB()"
+});
+formatter.result({
+  "duration": 3332500073,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginToFBSteps.closeBrowser()"
+});
+formatter.result({
+  "duration": 686198116,
   "status": "passed"
 });
 });
