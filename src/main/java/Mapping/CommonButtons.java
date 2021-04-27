@@ -3,7 +3,7 @@ package Mapping;
 public class CommonButtons {
 
    public static final String LOGINBTN = "//button[@name='login']";
-   public static final String LOGOUTBTN = "i.hu5pjgll.lzf7d6o1.sp_rWenCQccERR.sx_5b4313";
+   public static final String LOGOUTBTN = "i.hu5pjgll.lzf7d6o1.sp_ynHRILwKcJ5.sx_aba290";
 
 
 }

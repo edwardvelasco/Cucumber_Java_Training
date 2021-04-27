@@ -23,7 +23,7 @@ import java.util.concurrent.TimeUnit;
 public class LoginToFBSteps {
     WebDriver driver;
 
-    @Given("^user is on Facebook login page$")
+    /*@Given("^user is on Facebook login page$")
     public void user_is_on_Facebook_login_page(){
         System.setProperty("webdriver.chrome.driver","d:\\chromedriver.exe");
         ChromeOptions ops = new ChromeOptions();
@@ -31,7 +31,7 @@ public class LoginToFBSteps {
         driver = new ChromeDriver(ops);
         //driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(1000, TimeUnit.SECONDS);
+        //driver.manage().timeouts().implicitlyWait(1000, TimeUnit.SECONDS);
 
         driver.get("http://www.facebook.com");
         driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
@@ -46,10 +46,10 @@ public class LoginToFBSteps {
     @When("^user enters \"(.*)\" and \"(.*)\"$")
     public void user_enters_username_and_password(String username, String password) throws Throwable {
         Thread.sleep(5000);
-        /*
+        *//*
         driver.findElement(By.name("email")).sendKeys("edward.velasco.ph+Matt@gmail.com");
         driver.findElement(By.name("pass")).sendKeys("TestingTeam1234");
-        */
+        *//*
 
         driver.findElement(By.name("email")).sendKeys(username);
         driver.findElement(By.name("pass")).sendKeys(password);
@@ -136,7 +136,7 @@ public class LoginToFBSteps {
         driver.findElement(By.name("pass")).sendKeys(userPass.get(2).get(1));
 
     }
-
+*/
         /*
     @After
     public void closeBrowser(){

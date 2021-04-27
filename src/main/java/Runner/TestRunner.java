@@ -8,10 +8,11 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = {"D://Cucumber_Java_Training//src//test//java//Features/LoginToFB.feature"},
         glue = {"StepDefinitions"},
-        plugin = {"pretty", "html:target/cucumber-reports/","junit:target/cucumber-reportsJunit/CucumberJunit.xml"}
+        plugin = {"pretty", "html:target/cucumber-reports/","junit:target/cucumber-reportsJunit/CucumberJunit.xml"},
         //strict = true,
         //dryRun = true,
         //monochrome = true
+        tags = {"@All"}
 
 
 )
